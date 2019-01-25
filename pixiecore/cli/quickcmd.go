@@ -41,6 +41,7 @@ func debianRecipe(parent *cobra.Command) {
 		"wheezy",
 		"jessie",
 		"stretch",
+		"buster",
 		"sid",
 	}
 
@@ -90,14 +91,11 @@ func ubuntuRecipe(parent *cobra.Command) {
 	versions := []string{
 		"precise",
 		"trusty",
-		"vivid",
-		"wily",
 		"xenial",
-		"yakkety",
-		"zesty",
 		"artful",
 		"bionic",
 		"cosmic",
+		"disco",
 	}
 
 	ubuntuCmd := &cobra.Command{
@@ -144,13 +142,10 @@ func ubuntuRecipe(parent *cobra.Command) {
 
 func fedoraRecipe(parent *cobra.Command) {
 	versions := []string{
-		"22",
-		"23",
-		"24",
-		"25",
 		"26",
 		"27",
 		"28",
+		"29",
 	}
 
 	fedoraCmd := &cobra.Command{
